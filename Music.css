@@ -1,0 +1,19 @@
+.headline {
+    font-family: Calibri, "Helvetica", san-serif;
+    line-height: 1.5em;
+    color: black;
+    font-size: 20px;
+    }
+    h1:after
+    {
+        content:' ';
+        display:block;
+        border:1px solid black;
+    }
+
+.main-content {
+    padding: 10%;
+    flex: 1 1 80%;
+    min-height: 100vh;
+      
+    }
