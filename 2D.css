@@ -44,7 +44,6 @@ input ~ .tab {
   display: block;
 }
 
-
 img:hover {
   background-color: yellow;
 }
@@ -64,4 +63,11 @@ img:hover {
 /* Darker background on mouse-over */
 .btn:hover {
   background-color: RoyalBlue;
+}
+
+@media (max-width: 767px) {
+  .image-grid {
+    display: flex;
+    flex-direction: column;
+  }
 }

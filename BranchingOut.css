@@ -69,3 +69,10 @@ img:hover {
 .btn:hover {
   background-color: RoyalBlue;
 }
+
+@media (max-width: 767px) {
+  .image-grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
