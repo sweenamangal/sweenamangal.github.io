@@ -8,61 +8,93 @@
     <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body onload="myFunction()" style="margin:0;">
 
-  <input type="radio" name="tabs" id="tab1" checked>
-  <label for="tab1">Oil Paintings</label>
+  <div id="loader"></div>
 
-  <input type="radio" name="tabs" id="tab2">
-  <label for="tab2">Watercolor Paintings</label>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
 
-  <button class="btn" onclick = "window.location.href='index.html';"><i class="fa fa-home"></i></button>
+    <button class="btn" onclick = "window.location.href='index.html';"><i class="fa fa-home"></i></button>
 
-  <div class = "tab content1">
-    <div class = "image-grid">
-        <img src="EA_B3_P5_Small.jpg" alt="Gallery image 1" class="img">
-        <img src="EA_B3_P4_Small.jpg" alt="Gallery image 1" class="img">
-        <img src="EA_B3_P3_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B3_P2_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B3_P1_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B2_P20_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B2_P19_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B2_P18_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B2_P17_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B2_P16_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B2_P15_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B2_P14_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B2_P13_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B2_P12_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B2_P11_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B1_P20_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B1_P19_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B1_P18_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B1_P17_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B1_P16_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B1_P15_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B1_P14_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B1_P13_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B1_P12_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B1_P11_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B1_P10_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B1_P9_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B1_P8_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B1_P7_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B1_P6_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B1_P5_Small.jpeg" alt="Gallery image 1" class="img">
-        <img src="EA_B1_P4_Small.jpeg" alt="Gallery image 1" class="img">
+    <input type="radio" name="tabs" id="tab1" checked>
+    <label for="tab1">Oil Paintings</label>
+
+    <input type="radio" name="tabs" id="tab2">
+    <label for="tab2">Watercolor Paintings</label>
+
+    <input type="radio" name="tabs" id="tab3">
+    <label for="tab3">Acrylic Paintings</label>
+
+    <input type="radio" name="tabs" id="tab4">
+    <label for="tab4">Oil Pastel Paintings</label>
+
+    <div class = "tab content1">
+      <div class = "image-grid">
+          <img src="EA_B3_P5_Small.jpg" alt="Gallery image 1" class="img">
+          <img src="EA_B3_P4_Small.jpg" alt="Gallery image 1" class="img">
+          <img src="EA_B3_P3_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B3_P2_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B3_P1_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B2_P20_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B2_P19_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B2_P18_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B2_P17_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B2_P16_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B2_P15_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B2_P14_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B2_P13_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B2_P12_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B2_P11_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B1_P20_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B1_P19_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B1_P18_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B1_P17_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B1_P16_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B1_P15_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B1_P14_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B1_P13_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B1_P12_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B1_P11_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B1_P10_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B1_P9_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B1_P8_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B1_P7_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B1_P6_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B1_P5_Small.jpeg" alt="Gallery image 1" class="img">
+          <img src="EA_B1_P4_Small.jpeg" alt="Gallery image 1" class="img">
+      </div>
+    </div>
+    <div class = "tab content2">
+      <div class = "image-grid">
+        <img src="Watercolor_5_Small.jpg" alt="Gallery image 2" class="img">
+        <img src="Watercolor_4_Small.jpg" alt="Gallery image 2" class="img">
+        <img src="Watercolor_3_Small.jpg" alt="Gallery image 2" class="img">
+        <img src="Watercolor_2_Small.jpg" alt="Gallery image 2" class="img">
+        <img src="WC_P_1.jpeg" alt="Gallery image 2" class="img">
+      </div>
+    </div>
+    <div class = "tab content3">
+      <div class = "image-grid">
+      </div>
+    </div>
+    <div class = "tab content4">
+      <div class = "image-grid">
+      </div>
     </div>
   </div>
-  <div class = "tab content2">
-    <div class = "image-grid">
-      <img src="Watercolor_5_Small.jpg" alt="Gallery image 2" class="img">
-      <img src="Watercolor_4_Small.jpg" alt="Gallery image 2" class="img">
-      <img src="Watercolor_3_Small.jpg" alt="Gallery image 2" class="img">
-      <img src="Watercolor_2_Small.jpg" alt="Gallery image 2" class="img">
-      <img src="WC_P_1.jpeg" alt="Gallery image 2" class="img">
-    </div>
-  </div>
+
+  <script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
 
 </body>
 </html>
