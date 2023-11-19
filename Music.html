@@ -6,7 +6,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="Music.css">
 </head>
-<body>
+<body onload="myFunction()" style="margin:0;">
+
+  <div id="loader"></div>
+
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+  
     <div class="page-wrap">
 
         <ul data-component class="smol-css-grid" style="--min: 22ch; --gap: 2rem; padding-inline-start: 0px;">
@@ -28,5 +33,20 @@
           </ul>    
        
     </div>
+    </div>
+
+    <script>
+      var myVar;
+      
+      function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+      }
+      
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+      </script>
+  
 </body>
 </html>

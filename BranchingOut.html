@@ -8,7 +8,12 @@
     <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body onload="myFunction()" style="margin:0;">
+
+    <div id="loader"></div>
+
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+
     <input type="radio" name="tabs" id="tab1" checked>
     <label for="tab1">Woodburning</label>
   
@@ -41,5 +46,21 @@
             <img src="Sculpture_7.JPG" alt="Gallery image 1" class="img">
         </div>
     </div>
+
+    </div>
+
+    <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 3000);
+        }
+        
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
+        </script>
+    
 </body>
 </html>
