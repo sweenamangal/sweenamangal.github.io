@@ -92,8 +92,6 @@ but as a fallback you can chain `:not()` instead */
   align-self: start;
 }
 
-
-
 /* Additional demo styles from SmolCSS.dev
    Not all styles may be needed for this pen */
 body > ul {
@@ -178,4 +176,71 @@ body > ul {
 #myDiv {
   display: none;
   text-align: center;
+}
+
+/*Formatting the footer*/
+.footer {
+  background-color: rgb(174, 174, 174);
+  color: #fefefe;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.footer .heading {
+  color: #fefefe;
+  max-width: 1010px;
+  width: 90%;
+  text-transform: uppercase;
+  margin: 0 auto;
+  font-size: 1.75rem;
+}
+
+.footer .content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer .content h4 {
+  font-size: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 767px) {
+
+  .footer .heading {
+    font-size: 1rem;
+  }
+
+  .footer .content {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .footer .content h4 {
+    font-size: 1rem;
+  }
+
+  .footer {
+    position: unset;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer .content,
+  .footer {
+    font-size: 14px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .footer {
+    position: unset;
+  }
 }
