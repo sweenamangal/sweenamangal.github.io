@@ -5,7 +5,7 @@
 
 :root {
   --marquee-width: 88vw;
-  /*--marquee-elements: 12;*/
+  /*--marquee-elements: 9;*/
   --marquee-elements-displayed: 4;
   --marquee-element-width: calc(var(--marquee-width))/(var(--marquee-elements-displayed));
   --marquee-animation-duration: calc(var(--marquee-elements)*2s);
@@ -15,6 +15,7 @@
     border: 5px solid black;
     overflow: hidden;
     width: var(--marquee-width);
+    margin: auto;
 }
 
 .marquee-content {
@@ -121,6 +122,8 @@ footer {
 
   :root {
     --marquee-elements-displayed: 3;
+    --marquee-width: 100vw;
+    --marquee-height: 15vh;
   }
 
   .footer .heading {
