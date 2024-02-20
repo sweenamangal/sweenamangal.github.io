@@ -3,12 +3,38 @@
   object-fit: contain;
 }*/
 
+/* Utility classes */
+.animate {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animate.animate--infinite {
+  animation-iteration-count: infinite;
+}
+
+.animate.animate--delay-1s {
+  animation-delay: 1s;
+}
+
+.animate.animate--fast {
+  animation-duration: 0.6s;
+}
+
+.animate.animate--slow {
+  animation-duration: 3s;
+}
+
 :root {
   --marquee-width: 88vw;
   /*--marquee-elements: 9;*/
   --marquee-elements-displayed: 4;
   --marquee-element-width: calc(var(--marquee-width))/(var(--marquee-elements-displayed));
   --marquee-animation-duration: calc(var(--marquee-elements)*2s);
+}
+
+h1 {
+  font-family: 'Caudex';font-size: 3vw;
 }
 
 .marquee {
@@ -18,7 +44,7 @@
     margin: auto;
 }
 
-.marquee-content {
+/*.marquee-content {
   list-style: none;
   display: flex;
   animation: scrolling var(--marquee-animation-duration) linear infinite;
@@ -49,6 +75,7 @@
 .marquee-content:hover {
 animation-play-state: paused;
 }
+*/
 
 .placeholder {
   list-style: none;
@@ -73,6 +100,21 @@ animation-play-state: paused;
 
 .marquee .placeholder {
   overflow: scroll;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(6em);
+  }
+
+  to {
+    transform: translateX(0.25em);
+  }
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+  animation-timing-function: ease-out;
 }
 
 .btn {
@@ -150,6 +192,10 @@ footer {
     --marquee-elements-displayed: 3;
     --marquee-width: 100vw;
     --marquee-height: 15vh;
+  }
+
+  h1 {
+    font-family: 'Caudex';font-size: 5vw;
   }
 
   .footer .heading {
