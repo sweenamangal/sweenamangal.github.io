@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Paintings.css">
+    <link rel="stylesheet" href="lightbox.css">
     <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
@@ -16,10 +17,12 @@
         <button class="btn" onclick = "window.location.href='index.html';"><i class="fa fa-home"></i></button>
 
         <div class = "image-grid">
-            <img src="Airplane_Acrylic_Small.jpeg" alt="Gallery image 3" class="img">
-            <img src="TigerEye_Acrylic_Small.jpeg" alt="Gallery image 3" class="img">
-            <img src="Rose_Acrylic_Small.jpeg" alt="Gallery image 3" class="img">
-          </div>
+
+          <a href="Acrylic/Airplane_Acrylic_Small.jpeg" data-lightbox="Acrylic" data-title="Taking Off" class="grow glow"><img src="Acrylic/Airplane_Acrylic_Small.jpeg" alt="Gallery image 3" class="img"></a>
+          <a href="Acrylic/TigerEye_Acrylic_Small.jpeg" data-lightbox="Acrylic" data-title="Tiger Eye Study" class="grow glow"><img src="Acrylic/TigerEye_Acrylic_Small.jpeg" alt="Gallery image 3" class="img"></a>
+          <a href="Acrylic/Rose_Acrylic_Small.jpeg" data-lightbox="Acrylic" data-title="Rose Study" class="grow glow"><img src="Acrylic/Rose_Acrylic_Small.jpeg" alt="Gallery image 3" class="img"></a>
+        
+        </div>
 
     </div>
 
@@ -46,6 +49,7 @@
         </div>
       </section>
     
+      <script src="lightbox-plus-jquery.js" crossorigin="anonymous"></script>
       <script src="https://kit.fontawesome.com/97481840bc.js" crossorigin="anonymous"></script>
 
 </body>

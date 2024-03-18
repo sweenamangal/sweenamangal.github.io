@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Paintings.css">
+    <link rel="stylesheet" href="lightbox.css">
     <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
@@ -11,13 +12,14 @@
 <body>
 
     <div>
-
+      <div>
         <button class="btn" onclick = "window.location.href='index.html';"><i class="fa fa-home"></i></button>
+      </div>
 
         <div class = "image-grid">
-            <img src="Charcoal_OldMan_Portrait_Small.jpeg" alt="Gallery image 2" class="img">
-            <img src="Charcoal_Skull_Small.jpeg" alt="Gallery image 2" class="img">
-            <img src="Charcoal_5min_Small.jpeg" alt="Gallery image 2" class="img">
+          <a href="Charcoal/Charcoal_OldMan_Portrait_Small.jpeg" data-lightbox="Charcoal" data-title="Sinner or Saint" class="grow glow"><img src="Charcoal/Charcoal_OldMan_Portrait_Small.jpeg" alt="Gallery image 2" class="img"></a>
+          <a href="Charcoal/Charcoal_Skull_Small.jpeg" data-lightbox="Charcoal" data-title="Haunting Skull" class="grow glow"><img src="Charcoal/Charcoal_Skull_Small.jpeg" alt="Gallery image 2" class="img"></a>
+          <a href="Charcoal/Charcoal_5min_Small.jpeg" data-lightbox="Charcoal" data-title="5 Minute Sketch" class="grow glow"><img src="Charcoal/Charcoal_5min_Small.jpeg" alt="Gallery image 2" class="img"></a>
           </div>
 
     </div>
@@ -45,6 +47,7 @@
         </div>
       </section>
     
+      <script src="lightbox-plus-jquery.js" crossorigin="anonymous"></script>
       <script src="https://kit.fontawesome.com/97481840bc.js" crossorigin="anonymous"></script>
 </body>
 </html>
