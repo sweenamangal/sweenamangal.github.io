@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Paintings.css">
+    <link rel="stylesheet" href="lightbox.css">
     <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -12,15 +13,17 @@
 
     <div>
 
+      <h1>Oil Pastel</h1>
+
         <button class="btn" onclick = "window.location.href='index.html';"><i class="fa fa-home"></i></button>
         
         <div class = "image-grid">
-            <img src="Oil_P_2_Small.jpeg" alt="Gallery image 4" class="img">
-            <img src="Oil_P_1_Small.jpeg" alt="Gallery image 4" class="img">
-            <img src="OilPastel_Ornament_Small.jpeg" alt="Gallery image 3" class="img">
-            <img src="OilPastel_SleepyDog_Small.jpeg" alt="Gallery image 3" class="img">
-            <img src="OilPastel_SnowyTrees_small.jpeg" alt="Gallery image 3" class="img">
-            <img src="OilPastel_Umbrella_Small.jpeg" alt="Gallery image 3" class="img">
+          <a href="Oil_Pastel/Oil_P_2_Small.jpeg" data-lightbox="Oil Pastel" data-title="In Bloom" class="grow glow"><img src="Oil_Pastel/Oil_P_2_Small.jpeg" alt="Gallery image 4" class="img"></a>
+          <a href="Oil_Pastel/Oil_P_1_Small.jpeg" data-lightbox="Oil Pastel" data-title="Cloudy Sky" class="grow glow"><img src="Oil_Pastel/Oil_P_1_Small.jpeg" alt="Gallery image 4" class="img"></a>
+          <a href="Oil_Pastel/OilPastel_Ornament_Small.jpeg" data-lightbox="Oil Pastel" data-title="Ornament Study" class="grow glow"><img src="Oil_Pastel/OilPastel_Ornament_Small.jpeg" alt="Gallery image 3" class="img"></a>
+          <a href="Oil_Pastel/OilPastel_SleepyDog_Small.jpeg" data-lightbox="Oil Pastel" data-title="Taking a Nap" class="grow glow"><img src="Oil_Pastel/OilPastel_SleepyDog_Small.jpeg" alt="Gallery image 3" class="img"></a>
+          <a href="Oil_Pastel/OilPastel_SnowyTrees_small.jpeg" data-lightbox="Oil Pastel" data-title="Winter" class="grow glow"><img src="Oil_Pastel/OilPastel_SnowyTrees_small.jpeg" alt="Gallery image 3" class="img"></a>
+          <a href="Oil_Pastel/OilPastel_Umbrella_Small.jpeg" data-lightbox="Oil Pastel" data-title="Smell of Rain" class="grow glow"><img src="Oil_Pastel/OilPastel_Umbrella_Small.jpeg" alt="Gallery image 3" class="img"></a>
           </div>
 
     </div>
@@ -48,6 +51,7 @@
         </div>
       </section>
     
+      <script src="lightbox-plus-jquery.js" crossorigin="anonymous"></script>
       <script src="https://kit.fontawesome.com/97481840bc.js" crossorigin="anonymous"></script>
 
 </body>

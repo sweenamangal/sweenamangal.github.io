@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Paintings.css">
+    <link rel="stylesheet" href="lightbox.css">
     <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
@@ -11,15 +12,43 @@
 <body>
     <div>
 
+        <h1>Woodburning</h1>
+
         <button class="btn" onclick = "window.location.href='index.html';"><i class="fa fa-home"></i></button>
 
         <div class = "image-grid">
-            <img src="Woodburning_1_Small.jpeg" alt="Gallery image 2" class="img">
-            <img src="Horse_WB_Small.jpeg" alt="Gallery image 1" class="img">
-            <img src="Butterfly_WB_Small.jpeg" alt="Gallery image 1" class="img">
+            <a href="Woodburning/Woodburning_1.JPG" data-lightbox="Woodburning" data-title="Peace" class="grow glow"><img src="Woodburning/Woodburning_1_Small.jpeg" alt="Gallery image 2" class="img"></a>
+            <a href="Woodburning/Horse_WB_Small.jpeg" data-lightbox="Woodburning" data-title="Horse in Flight" class="grow glow"><img src="Woodburning/Horse_WB_Small.jpeg" alt="Gallery image 1" class="img"></a>
+            <a href="Woodburning/Butterfly_WB_Small.jpeg" data-lightbox="Woodburning" data-title="Set Free" class="grow glow"><img src="Woodburning/Butterfly_WB_Small.jpeg" alt="Gallery image 1" class="img"></a>
           </div>
 
     </div>
+    
+    <section>
+        <div class="footer">
+          <div class="heading">
+            <h2>Connect with me</h2>
+          </div>
+          <div class="content">
+            <div class="Instagram">
+              <h4>
+                <a style="text-decoration:none;" href="https://www.instagram.com/exploreart_sweena"><i class="fa fa-instagram"></i> Instagram</a>
+              </h4>
+              </div>
+              <div class="Medium">
+              <h4>
+                <a style="text-decoration:none;" href="https://medium.com/@sweenamangal"><i class="fa-brands fa-medium"></i> Medium</a>
+              </h4>
+            </div>
+            <div class="email">
+              <h4><a href="mailto:someone@example.com">sweena_mangal@yahoo.com</a></h4>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <script src="lightbox-plus-jquery.js" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/97481840bc.js" crossorigin="anonymous"></script>
     
 </body>
 </html>
